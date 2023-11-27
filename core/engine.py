@@ -203,7 +203,7 @@ class Engine:
 
             combined_audio = combine_audio(speech_audio_wav, noise_audio_wav)
 
-            command = 'pip install librosa==0.9.2 && cp {} {}/audio.wav && cd ./video-retalking && rm -rf ./temp/* && python inference.py \
+            command = 'pip install librosa==0.9.2 && cp {} {}/audio.wav && cd ./video-retalking && pip install -r requirements.txt && rm -rf ./temp/* && python inference.py \
             --face {} --audio {} --outfile {} --LNet_batch_size {}'.format(
                 combined_audio, Path(output_file_path).parent, video_file_path, combined_audio, output_file_path, 8
             )

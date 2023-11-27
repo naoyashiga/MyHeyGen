@@ -1,19 +1,18 @@
-'''
 from googletrans import Translator
 
-class old_TextHelper:
-    def __init__(self):
+class TextHelper:
+    def __init__(self, config):
         self.translator = Translator()
 
     def translate(self, text, src_lang, dst_lang):
         print(text, ' ', src_lang, ' ', dst_lang)
         output = self.translator.translate(text, src=src_lang, dest=dst_lang)
         return output.text
-'''
 
 # You may install `requests` to run this code: pip install requests
 # Please refer to `https://api.fanyi.baidu.com/doc/21` for complete api document
 
+'''
 import time
 import requests
 import random
@@ -98,4 +97,4 @@ class TextHelper:
 
 
 
-
+'''
