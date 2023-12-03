@@ -1,6 +1,8 @@
 ## test on python 3.10.0
 pip install pip -U
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# CUDA 12.1
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
 pip install TTS
 pip install onnxruntime
 pip install scenedetect
@@ -27,6 +29,8 @@ pip install face-alignment==1.3.4
 pip install ninja==1.10.2.3
 pip install dlib --verbose
 # pip install librosa==0.9.2
+pip install protobuf==3.20
+pip install googletrans==3.1.0a0
 
 apt update
 apt install ffmpeg
